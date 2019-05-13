@@ -1,5 +1,7 @@
 from app import app
+from flask import render_template
+
 
 @app.route('/')
 def welcome():
-    return "Welcome! We are doing something now"
+    return render_template('index.html')
